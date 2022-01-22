@@ -1,0 +1,18 @@
+[package]
+name = "ifconfig-fastly"
+version = "0.1.1"
+authors = ["Bhanu Teja Ganneni"]
+edition = "2021"
+publish = false
+
+[profile.release]
+debug = 1
+
+[dependencies]
+fastly = "^0.8"
+log = "0.4"
+log-fastly = "^0.8"
+anyhow = "1.0"
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+serde = { version = "1.0", default-features = false, features = ["alloc"] }
+askama = "0.11"
