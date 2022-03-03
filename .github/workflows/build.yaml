@@ -23,9 +23,10 @@ jobs:
           components: rustfmt, clippy
 
       - name: Run cargo clippy
-        uses: actions-rs/cargo@v1
+        uses: actions-rs/clippy-check@v1
         with:
-          command: clippy -- -D warnings
+          token: ${{ secrets.GITHUB_TOKEN }}
+          args: --all-features
 
       - uses: actions-rs/cargo@v1
         with:
