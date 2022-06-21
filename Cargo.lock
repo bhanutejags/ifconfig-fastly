@@ -279,9 +279,9 @@ dependencies = [
 
 [[package]]
 name = "log-fastly"
-version = "0.8.4"
+version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4bc526907ce788f8f6d32ac153b4a0f77540a0c7d0aa2cd1949418cb7bbf1fda"
+checksum = "df4b4b2cc94489f61e4b84d59409589da8ae9745f42fa728420f087b18d27371"
 dependencies = [
  "fastly",
  "log",
