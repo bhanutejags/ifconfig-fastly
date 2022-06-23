@@ -124,9 +124,9 @@ dependencies = [
 
 [[package]]
 name = "fastly"
-version = "0.8.5"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cda9049e4227a6eb29f44f539fda339d8ed783ee421cbae152694e51c0d1ad7e"
+checksum = "32320461110a3fa05a51c3710102ad513fa55d0ddc05da87f39c3f95f1e11d53"
 dependencies = [
  "anyhow",
  "bytes 0.5.6",
@@ -147,9 +147,9 @@ dependencies = [
 
 [[package]]
 name = "fastly-macros"
-version = "0.8.5"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7924a1c03be098a2b8338ba46013b178a844e3df08cb2011793f9bcfb92c7f6a"
+checksum = "db96d4379d6dc28f8536ef77bb7482afb88a1c8b48c5b85adf92e6726592b01a"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -158,9 +158,9 @@ dependencies = [
 
 [[package]]
 name = "fastly-shared"
-version = "0.8.5"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2ee55f605927c28e19cf95c9df9914decd3fe5cfcc035548bb13b7e207ac7a3f"
+checksum = "b9a0f708662c55ea42ba4da9326537c24944f2ec07f7901a391f2eed56a0a932"
 dependencies = [
  "bitflags",
  "http",
@@ -169,9 +169,9 @@ dependencies = [
 
 [[package]]
 name = "fastly-sys"
-version = "0.8.5"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83b14615b6593967e390ac5e7281f7c126b0547af5b77d71abc534322a963df8"
+checksum = "cc6c66d20606bd5d42160038a8e214418c45bb2dd2a33cf8495fad461872b508"
 dependencies = [
  "bitflags",
  "fastly-shared",
@@ -279,9 +279,9 @@ dependencies = [
 
 [[package]]
 name = "log-fastly"
-version = "0.8.4"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4bc526907ce788f8f6d32ac153b4a0f77540a0c7d0aa2cd1949418cb7bbf1fda"
+checksum = "99745406242372af734111b6f34ea6af517e64680b8cfc76bfa5b313719cd27c"
 dependencies = [
  "fastly",
  "log",
@@ -374,9 +374,9 @@ dependencies = [
 
 [[package]]
 name = "regex"
-version = "1.5.4"
+version = "1.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d07a8629359eb56f1e2fb1652bb04212c072a87ba68546a04065d525673ac461"
+checksum = "d83f127d94bdbcda4c8cc2e50f6f84f4b611f69c902699ca385a39c3a75f9ff1"
 dependencies = [
  "aho-corasick",
  "memchr",
@@ -385,9 +385,9 @@ dependencies = [
 
 [[package]]
 name = "regex-syntax"
-version = "0.6.25"
+version = "0.6.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f497285884f3fcff424ffc933e56d7cbca511def0c9831a7f9b5f6153e3cc89b"
+checksum = "49b3de9ec5dc0a3417da371aab17d729997c15010e7fd24ff707773a33bddb64"
 
 [[package]]
 name = "ryu"
