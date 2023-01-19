@@ -9,7 +9,7 @@ publish = false
 debug = 1
 
 [dependencies]
-fastly = "^0.8"
+fastly = "^0.9"
 log = "0.4"
 log-fastly = "^0.8"
 anyhow = "1.0"
