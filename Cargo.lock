@@ -130,9 +130,33 @@ checksum = "cda9049e4227a6eb29f44f539fda339d8ed783ee421cbae152694e51c0d1ad7e"
 dependencies = [
  "anyhow",
  "bytes 0.5.6",
- "fastly-macros",
- "fastly-shared",
- "fastly-sys",
+ "fastly-macros 0.8.5",
+ "fastly-shared 0.8.5",
+ "fastly-sys 0.8.5",
+ "http",
+ "lazy_static",
+ "mime",
+ "serde",
+ "serde_json",
+ "serde_urlencoded",
+ "sha2",
+ "thiserror",
+ "time",
+ "url",
+]
+
+[[package]]
+name = "fastly"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "645e7a0c3782166bcab2c7f0704d51db0fed2d27093d5beea94cef878ba11bb9"
+dependencies = [
+ "anyhow",
+ "bytes 0.5.6",
+ "cfg-if",
+ "fastly-macros 0.9.1",
+ "fastly-shared 0.9.1",
+ "fastly-sys 0.9.1",
  "http",
  "lazy_static",
  "mime",
@@ -157,10 +181,32 @@ dependencies = [
 ]
 
 [[package]]
+name = "fastly-macros"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6b5163881fe9bab8e865258351e931635d2d17ed88113e546db7c7e57f7249e9"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "fastly-shared"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2ee55f605927c28e19cf95c9df9914decd3fe5cfcc035548bb13b7e207ac7a3f"
+dependencies = [
+ "bitflags",
+ "http",
+ "thiserror",
+]
+
+[[package]]
+name = "fastly-shared"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "40d95b3a3816d17b02f3972d16fefddd164c0ec7c1b4e090b380177131a4a22d"
 dependencies = [
  "bitflags",
  "http",
@@ -174,7 +220,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "83b14615b6593967e390ac5e7281f7c126b0547af5b77d71abc534322a963df8"
 dependencies = [
  "bitflags",
- "fastly-shared",
+ "fastly-shared 0.8.5",
+]
+
+[[package]]
+name = "fastly-sys"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "286a15f3231704bfadc3e2a739b04fdd6fadfa4706157d482f05c0539c681594"
+dependencies = [
+ "bitflags",
+ "fastly-shared 0.9.1",
 ]
 
 [[package]]
@@ -237,7 +293,7 @@ version = "0.1.1"
 dependencies = [
  "anyhow",
  "askama",
- "fastly",
+ "fastly 0.8.5",
  "log",
  "log-fastly",
  "serde",
@@ -279,11 +335,11 @@ dependencies = [
 
 [[package]]
 name = "log-fastly"
-version = "0.8.4"
+version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4bc526907ce788f8f6d32ac153b4a0f77540a0c7d0aa2cd1949418cb7bbf1fda"
+checksum = "6033f42b6c8ca6e46966073065312ac3d371fc8cac323dd76cf479093730f71f"
 dependencies = [
- "fastly",
+ "fastly 0.9.1",
  "log",
  "regex",
 ]
@@ -374,9 +430,9 @@ dependencies = [
 
 [[package]]
 name = "regex"
-version = "1.5.4"
+version = "1.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d07a8629359eb56f1e2fb1652bb04212c072a87ba68546a04065d525673ac461"
+checksum = "48aaa5748ba571fb95cd2c85c09f629215d3a6ece942baa100950af03a34f733"
 dependencies = [
  "aho-corasick",
  "memchr",
@@ -385,9 +441,9 @@ dependencies = [
 
 [[package]]
 name = "regex-syntax"
-version = "0.6.25"
+version = "0.6.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f497285884f3fcff424ffc933e56d7cbca511def0c9831a7f9b5f6153e3cc89b"
+checksum = "456c603be3e8d448b072f410900c09faf164fbce2d480456f50eea6e25f9c848"
 
 [[package]]
 name = "ryu"
